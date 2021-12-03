@@ -48,4 +48,24 @@ class Image(models.Model):
     def update_caption(cls,update):
         pass
 
+    @classmethod
+    def get_image_id(cls,id):
+        image = Image.objects.get(pk=id)
+        return image
+    @classmethod
+    def get_profile_images(cls, profile):
+        images = Image.objects.filter(profile__pk = profile)
+        return images
+
     
+    @classmethod
+    def get_all_images(cls):
+        images = Image.objects.all()
+        return images
+
+
+    
+
+    
+
+
