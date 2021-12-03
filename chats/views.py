@@ -34,3 +34,6 @@ def signup(request):
                     to_email = form.cleaned_data.get('email')
                     send_activation_mail(user, current_site(request))
                     return HttpResponse('confirm your email address to complete user registration')
+
+
+
