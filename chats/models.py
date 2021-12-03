@@ -2,9 +2,12 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.fields.files import ImageField
 from tinymce.models import HTMLField
+from django.utils.timezone import now
+
 # from pyuploadcare.dj.models import modelsImageField
 # create your models here.
 class Profile(models.Model):
+    # profile_photo = models.ImageField(upload_to = 'profilepics/', default='Image')
     prof_pic = ImageField(blank=True,)
     bio = HTMLField()
     user = models.OneToOneField(User,on_delete=models.CASCADE,primary_key=True)
@@ -62,6 +65,21 @@ class Image(models.Model):
     def get_all_images(cls):
         images = Image.objects.all()
         return images
+
+class Comments(models.Model):
+    comment = HTMLField
+    posted_on = models.DateTimeField(auto_now=True)
+    image = models.ForeignKey(Image, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def save_comment(self):
+        self.save()
+
+    
+    @classmethod
+    def get_comments_by_images(cls, id):
+        comments = Comments.objects.filter(image__pk = id)
+        return comments
 
 
     
