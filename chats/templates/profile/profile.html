@@ -10,7 +10,24 @@
                     {% if profile_details.prof_pic %}
                     <img src="{{profile_details.prof_pic.cdn_url}}" alt="profile-photo">
                     {% else %}
-                    <img src="/static/img/profil.png" alt="avatar">
+                    <img src="/static/img/Instagram.jpg" alt="avatar">
                     {% endif %}
                 </div>
-                
+                <div class="col-md-5 text-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <span class="username">{{ profile.username }}</span> 
+                        </li>
+                        {% if profile.username == user.username %}
+                        <li class="list-inline-item">
+                            <a class="btn btn-edit" href="{% url 'edit_profile' %}">Edit Profile</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a data-toggle="modal" data-target="#settings"><i class="fa fa-cog fa-2x"></i></a>
+                        </li>
+                        {% else %}
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-primary">Follow</a>
+                        </li>
+                        {% endif %}
+                    </ul>
