@@ -31,3 +31,36 @@
                         </li>
                         {% endif %}
                     </ul>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <span class="font-weight-bold">{{images|length}} </span> Posts
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="font-weight-bold">{{followers|length}}</span> Followers
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="font-weight-bold">{{following|length}}</span> Following
+                        </li>
+                    </ul>
+                    <p class="font3">{{profile_details.bio|safe}}</p>
+                    {% if profile.username == user.username %}
+                    <p><a href="{% url 'upload_image' %}">Upload Image</a></p>
+                    {% endif %} 
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h3 style="text-align: center;">All Posts</h3>
+    <div class="row user-images">
+        {% for img in images %}
+        <div class="col-md-4 images">
+            <img src="{{img.photo.cdn_url}}" alt="Image">
+        </div>
+        {% empty %}
+        <div class="col-md-12">
+            <h2> No Uploaded images</h2>
+        </div>
+        {% endfor %}
+    </div>
+</div>    
