@@ -1,5 +1,5 @@
 {% load bootstrap4 %}
-{% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +14,7 @@
 
     {% block styles %}
         {% bootstrap_css %}
-        <link rel="stylesheet" href="{% static '/static/css/auth.css'%}">
+        <link rel="stylesheet" href="{% static 'css/auth.css'%}">
     {% endblock %}
 </head>
 <body>
