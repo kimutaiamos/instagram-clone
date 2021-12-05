@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 <div class="container top">
     <div class="row">
@@ -14,7 +14,7 @@
                 {% if profile.prof_pic %}
                 <img src="{{profile.prof_pic.cdn_url}}" alt="profile-photo">
                 {% else %}
-                <img src="/static/img/profil.png" alt="avatar">
+                <img src="static/img/profile.png" alt="avatar">
                 {% endif %}
                 <p class="username">{{profile.user.username}} </p>
                 <p><a class="btn btn-primary" href="{% url 'profile' username=profile.user.username %}">View Profile</a></p>
