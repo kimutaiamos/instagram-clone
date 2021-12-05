@@ -32,7 +32,7 @@ class Profile(models.Model):
 
 
 class Image(models.Model):
-    photo = ImageField()
+    photo = ImageField(blank=True)
     image_name = models.CharField(max_length=50)
     image_caption = HTMLField(blank=True)
     post_date = models.DateTimeField(auto_now=True)
