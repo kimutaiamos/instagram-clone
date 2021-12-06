@@ -1,4 +1,4 @@
-# Gallery
+# instagram-clone
 Developed by sir Amos Kimutai on 3rd December 2021
 ## Descriptions
 An app that allows user share posts and like or comment , and can follow other app users
