@@ -9,7 +9,6 @@ chardet==3.0.4
 Click==7.0
 cloudinary==1.28.0
 colorama==0.4.3
-command-not-found==0.3
 config==0.4.2
 confusable-homoglyphs==3.2.0
 cryptography==2.8
