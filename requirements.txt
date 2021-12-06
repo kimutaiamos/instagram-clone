@@ -27,6 +27,7 @@ django-utils-six==2.0
 email-validator==1.1.3
 
 
+gunicorn==19.9.0
 
 
 Pillow==8.4.0
