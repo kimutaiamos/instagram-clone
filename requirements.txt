@@ -8,7 +8,7 @@ certifi==2021.10.8
 
 Click==7.0
 cloudinary==1.28.0
-colorama==0.4.3
+
 config==0.4.2
 dbus-python==1.2.16
 dj-database-url==0.5.0
@@ -16,38 +16,34 @@ Django==3.2.9
 django-bootstrap-v5==1.0.6
 django-bootstrap3==21.1
 django-bootstrap4==21.1
-django-cors-headers==3.3.0
+
 django-heroku==0.3.1
 django-registration==3.2
 django-registration-redux==2.9
-django-taggit==1.2.0
+
 django-tinymce==3.4.0
 django-utils-six==2.0
-dnspython==2.1.0
+
 
 email-validator==1.1.3
-lient==0.14.2
-lazr.uri==1.0.3
-lockfile==0.12.2
+
+
+
 
 Pillow==8.4.0
-prompt-toolkit==3.0.23
-protobuf==3.6.1
+
 psycopg2==2.9.2
 psycopg2-binary==2.9.2
 
-pyRFC3339==1.1
-python-apt==2.0.0+ubuntu0.20.4.6
+
+
 python-dateutil==2.8.2
 python-debian===0.1.36ubuntu1
 python-decouple==3.5
 pytz==2021.3
 pyuploadcare==3.0.0
-pyxdg==0.26
-PyYAML==5.3.1
-reportlab==3.5.34
-requests==2.22.0
-requests-unixsocket==0.2.0
+
+
 
 six==1.16.0
 whitenoise==5.3.0
