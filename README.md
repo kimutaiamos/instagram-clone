@@ -1,4 +1,4 @@
-# Gallery
+# instagram-clone
 Developed by sir Amos Kimutai on 3rd December 2021
 ## Descriptions
 An app that allows user share posts and like or comment , and can follow other app users
@@ -26,7 +26,7 @@ my website is build with little knowledge in the django framework,it is however,
 you can also refer here https://stackoverflow.com/questions/8503559/what-is-linting to learn more and run tests. and the current django 3.2 documentation
 software methods and tools refer herehttp://www.methodsandtools.com/archive/archive.php?id=33.
 ### Live Site
-View [live]()
+View [live](https://instagram-ke.herokuapp.com/)
 ## license
 
 This software is LIcensed under MIT license copyright 2019 [sirAmos]
